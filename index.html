@@ -41,24 +41,212 @@
     <div class="card">
       <h2 style="font-size:22px; margin-bottom:24px; font-weight:600;">Project Information</h2>
 
+      <!-- GENERAL INFO -->
+      <div class="formGroup">
+        <label>Project Name</label>
+        <input id="projectName" placeholder="e.g. Oak Street Development">
+      </div>
+      
+      <div class="formGroup">
+        <label>Project Address</label>
+        <input id="projectAddress" placeholder="e.g. 123 Main St, City, State">
+      </div>
+      
+      <div class="formGroup">
+        <label>Date</label>
+        <input id="date" placeholder="e.g. April 8, 2026">
+      </div>
+      
+      <div class="formGroup">
+        <label>Client Name</label>
+        <input id="clientName" placeholder="e.g. John Smith">
+      </div>
+      
+      <div class="formGroup">
+        <label>Client Company</label>
+        <input id="clientCompany" placeholder="e.g. ABC Development LLC">
+      </div>
+      
+      <div class="formGroup">
+        <label>Client Address</label>
+        <input id="clientAddress" placeholder="e.g. 456 Business Rd, City, State">
+      </div>
+      
+      <div class="formGroup">
+        <label>Client Email</label>
+        <input id="clientEmail" placeholder="e.g. client@email.com">
+      </div>
+      
+      <!-- PROJECT DETAILS -->
       <div class="formGroup">
         <label>Project Type</label>
         <input id="projectType" placeholder="e.g. Commercial, Residential, Mixed-Use" value="Commercial">
       </div>
-
+      
       <div class="formGroup">
-        <label>Lot Size</label>
-        <input id="lotSize" placeholder="e.g. 2.5 acres, 108,900 sq ft" value="2.5 acres">
+        <label>Project Description</label>
+        <input id="projectDescription" placeholder="Describe what is being built">
       </div>
-
+      
       <div class="formGroup">
-        <label>Impervious Area</label>
-        <input id="impervious" placeholder="e.g. 75%, 65%" value="75%">
+        <label>Site Size</label>
+        <input id="siteSize" placeholder="e.g. 2.5 acres">
       </div>
-
+      
       <div class="formGroup">
-        <label>Additional Notes</label>
-        <textarea id="notes" rows="4" placeholder="Tie into existing road, steep slope on north side, etc.">Tie into existing road</textarea>
+        <label>Number of Lots / Units</label>
+        <input id="numberLots" placeholder="e.g. 25 lots">
+      </div>
+      
+      <div class="formGroup">
+        <label>Existing Conditions Summary</label>
+        <input id="ecSummary" placeholder="Brief description of existing site conditions">
+      </div>
+      
+      <div class="formGroup">
+        <label>Proposed Improvements</label>
+        <input id="proposedImprovements" placeholder="Describe proposed improvements">
+      </div>
+      
+      <!-- REGULATORY -->
+      <div class="formGroup">
+        <label>Zoning District</label>
+        <input id="zone" placeholder="e.g. B-2 Commercial">
+      </div>
+      
+      <div class="formGroup">
+        <label>Required Permits</label>
+        <input id="reqPermits" placeholder="List required permits">
+      </div>
+      
+      <div class="formGroup">
+        <label>Known Constraints</label>
+        <input id="constraints" placeholder="General constraints">
+      </div>
+      
+      <div class="formGroup">
+        <label>Wetlands</label>
+        <input id="wetlands" placeholder="Describe wetlands on site">
+      </div>
+      
+      <div class="formGroup">
+        <label>Floodplain</label>
+        <input id="floodplain" placeholder="Flood zone info">
+      </div>
+      
+      <div class="formGroup">
+        <label>Buffers</label>
+        <input id="buffers" placeholder="Setbacks / buffer zones">
+      </div>
+      
+      <div class="formGroup">
+        <label>Other Regulatory Constraints</label>
+        <input id="otherReg" placeholder="Any additional constraints">
+      </div>
+      
+      <div class="formGroup">
+        <label>Discussions with Town Officials</label>
+        <input id="townOfficials" placeholder="Summary of discussions (if any)">
+      </div>
+      
+      <!-- SCOPE -->
+      <div class="formGroup">
+        <label>Include Survey?</label>
+        <input id="incSurv" placeholder="Yes / No">
+      </div>
+      
+      <div class="formGroup">
+        <label>Include Master Planning?</label>
+        <input id="incMast" placeholder="Yes / No">
+      </div>
+      
+      <div class="formGroup">
+        <label>Include Site Design?</label>
+        <input id="incSite" placeholder="Yes / No">
+      </div>
+      
+      <div class="formGroup">
+        <label>Include Septic Design?</label>
+        <input id="incSeptic" placeholder="Yes / No">
+      </div>
+      
+      <div class="formGroup">
+        <label>Include Stormwater Design?</label>
+        <input id="incStorm" placeholder="Yes / No">
+      </div>
+      
+      <div class="formGroup">
+        <label>Include Permitting?</label>
+        <input id="incPermit" placeholder="Yes / No">
+      </div>
+      
+      <!-- FEES -->
+      <div class="formGroup">
+        <label>Phase A Fee</label>
+        <input id="aFee" placeholder="e.g. $20,000">
+      </div>
+      
+      <div class="formGroup">
+        <label>Phase B Fee</label>
+        <input id="bFee" placeholder="e.g. $15,000">
+      </div>
+      
+      <div class="formGroup">
+        <label>Phase C Fee</label>
+        <input id="cFee" placeholder="e.g. $12,000">
+      </div>
+      
+      <div class="formGroup">
+        <label>Phase D Fee</label>
+        <input id="dFee" placeholder="e.g. $10,000">
+      </div>
+      
+      <div class="formGroup">
+        <label>Retainer Amount</label>
+        <input id="retAmount" placeholder="e.g. $8,000">
+      </div>
+      
+      <!-- SCHEDULE -->
+      <div class="formGroup">
+        <label>Estimated Start Timing</label>
+        <input id="estStart" placeholder="e.g. Upon authorization">
+      </div>
+      
+      <div class="formGroup">
+        <label>Existing Conditions Duration</label>
+        <input id="ecDur" placeholder="e.g. 6-8 weeks">
+      </div>
+      
+      <div class="formGroup">
+        <label>Master Plan Duration</label>
+        <input id="masDur" placeholder="e.g. 4 weeks">
+      </div>
+      
+      <div class="formGroup">
+        <label>Design Duration</label>
+        <input id="desDur" placeholder="e.g. 6 weeks">
+      </div>
+      
+      <!-- EXCLUSIONS -->
+      <div class="formGroup">
+        <label>Custom Exclusions</label>
+        <input id="otherExclusions" placeholder="List exclusions">
+      </div>
+      
+      <!-- SIGNATURE -->
+      <div class="formGroup">
+        <label>Your Name</label>
+        <input id="yourName" placeholder="e.g. John Doe">
+      </div>
+      
+      <div class="formGroup">
+        <label>Your Title</label>
+        <input id="yourTitle" placeholder="e.g. Project Engineer">
+      </div>
+      
+      <div class="formGroup">
+        <label>Company Name</label>
+        <input id="compName" placeholder="e.g. Your Engineering Firm">
       </div>
 
       <button id="generateButton">Generate Proposal</button>
@@ -135,9 +323,61 @@ function renderProposal(text) {
 }
 
 document.getElementById("generateButton").addEventListener("click", async () => {
-  const type = document.getElementById("projectType").value;
-  const lotSize = document.getElementById("lotSize").value;
-  const impervious = document.getElementById("impervious").value;
+  // GENERAL INFO
+  const projectName = document.getElementById("projectName").value;
+  const projectAddress = document.getElementById("projectAddress").value;
+  const date = document.getElementById("date").value;
+  const clientName = document.getElementById("clientName").value;
+  const clientCompany = document.getElementById("clientCompany").value;
+  const clientAddress = document.getElementById("clientAddress").value;
+  const clientEmail = document.getElementById("clientEmail").value;
+  
+  // PROJECT DETAILS
+  const projectType = document.getElementById("projectType").value;
+  const projectDescription = document.getElementById("projectDescription").value;
+  const siteSize = document.getElementById("siteSize").value;
+  const numberLots = document.getElementById("numberLots").value;
+  const ecSummary = document.getElementById("ecSummary").value;
+  const proposedImprovements = document.getElementById("proposedImprovements").value;
+  
+  // REGULATORY / SITE CONDITIONS
+  const zone = document.getElementById("zone").value;
+  const reqPermits = document.getElementById("reqPermits").value;
+  const constraints = document.getElementById("constraints").value;
+  const wetlands = document.getElementById("wetlands").value;
+  const floodplain = document.getElementById("floodplain").value;
+  const buffers = document.getElementById("buffers").value;
+  const otherReg = document.getElementById("otherReg").value;
+  const townOfficials = document.getElementById("townOfficials").value;
+  
+  // SCOPE CUSTOMIZATION
+  const incSurv = document.getElementById("incSurv").value;
+  const incMast = document.getElementById("incMast").value;
+  const incSite = document.getElementById("incSite").value;
+  const incSeptic = document.getElementById("incSeptic").value;
+  const incStorm = document.getElementById("incStorm").value;
+  const incPermit = document.getElementById("incPermit").value;
+  
+  // FEES
+  const aFee = document.getElementById("aFee").value;
+  const bFee = document.getElementById("bFee").value;
+  const cFee = document.getElementById("cFee").value;
+  const dFee = document.getElementById("dFee").value;
+  const retAmount = document.getElementById("retAmount").value;
+  
+  // SCHEDULE
+  const estStart = document.getElementById("estStart").value;
+  const ecDur = document.getElementById("ecDur").value;
+  const masDur = document.getElementById("masDur").value;
+  const desDur = document.getElementById("desDur").value;
+  
+  // EXCLUSIONS
+  const otherExclusions = document.getElementById("otherExclusions").value;
+  
+  // SIGNATURE INFO
+  const yourName = document.getElementById("yourName").value;
+  const yourTitle = document.getElementById("yourTitle").value;
+  const compName = document.getElementById("compName").value;
   const notes = document.getElementById("notes").value;
 
   if (!type.trim()) {
@@ -150,21 +390,134 @@ document.getElementById("generateButton").addEventListener("click", async () => 
   const contentDiv = document.getElementById("proposalContent");
   contentDiv.innerHTML = "Generating proposal...";
 
-  const systemPrompt = `You are a senior civil engineer with 25 years of experience named ApolloX.
-You are writing a professional engineering proposal.
-Generate a well-structured proposal with the following sections exactly in this order:
-1. Scope of Work
-2. Project Understanding
-3. Deliverables
-4. Assumptions
-Use professional, clear, and concise language suitable for a client proposal.
-Use **bold text** when emphasizing important items, deliverables, or key points.
-Project Information:
-- Type: ${type}
-- Lot Size: ${lotSize}
-- Impervious Area: ${impervious}
-- Notes: ${notes || "None provided"}
-Format using markdown: Use **bold**, bullet points, and clear headings.`;
+  const systemPrompt = `
+  You are a professional civil engineering consultant preparing a formal proposal.
+
+Generate a complete proposal in plain text format (no markdown, no bullets unless specified, no styling like bold/italics) that exactly follows the structure and section order below. The output must be clean and ready for copy/paste into Word.
+
+Maintain a professional tone similar to an engineering consulting firm. Be specific, technical, and project-aware.
+
+REQUIRED OUTPUT STRUCTURE (DO NOT CHANGE ORDER OR HEADINGS UNLESS SPECIFICALLY DIRECTED TO BY THIS PROMPT):
+Header Information
+Project Name and Address
+Date
+Client Name and Address
+RE: Line
+Opening Letter
+Address client formally
+Intro paragraph describing firm and purpose of proposal
+PROJECT UNDERSTANDING
+Describe site location
+Describe parcels / lot sizes
+Zoning and regulatory context
+Environmental constraints (wetlands, floodplain, etc.)
+Summary of discussions with officials (if applicable)
+Summary of client’s proposed project
+
+PROPOSED SCOPE OF WORK
+
+Break into phases exactly like below:
+
+Phase A: Existing Conditions
+
+Numbered tasks (survey, GIS, mapping, deliverables)
+
+Phase B: Master Planning
+
+Numbered tasks (concept layout, client review, master plan, permitting path)
+
+Phase C: Site Improvements
+
+Numbered tasks (utilities, layout, plans, coordination)
+
+Phase D: [Custom Phase Name Based on Project]
+
+Numbered tasks specific to project (e.g., septic, stormwater, grading, etc.)
+SCHEDULE
+Timeline assumptions
+Duration for major deliverables
+Dependencies
+EXCLUSIONS
+Clearly list what is NOT included
+
+FEES
+
+Include:
+
+“Consulting Fee Budget” header
+Each phase with cost
+TOTAL FEE
+TERMS AND CONDITIONS
+Reference standard terms (do NOT rewrite full legal text)
+CLOSING
+Signature block
+Name, title
+
+WRITING RULES:
+Keep language concise and professional
+Use realistic engineering terminology
+Do not hallucinate unknown data — use placeholders like “[To Be Determined]” if needed
+Maintain consistency with provided inputs
+Keep formatting simple (plain text paragraphs + numbered lists only)
+
+GENERAL INFO
+Project Name: ${projectName}
+Project Address: ${projectAddress}
+Date: ${date}
+Client Name: ${clientName}
+Client Company: ${clientCompany}
+Client Address: ${clientAddress}
+Client Email: ${clientEmail}
+
+PROJECT DETAILS
+Project Type (Residential, Commercial, Campground, Subdivision, etc.): ${projectType}
+Project Description (what they want to build/do): ${projectDescription}
+Site Size (acres/sf): ${siteSize}
+Number of Lots / Units: ${numberLots}
+Existing Conditions Summary: ${ecSummary}
+Proposed Improvements: ${proposedImprovements}
+
+REGULATORY / SITE CONDITIONS
+Zoning District: ${zone}
+Required Permits: ${reqPermits}
+Known Constraints: ${constraints}
+Wetlands: ${wetlands}
+Floodplain: ${floodplain}
+Buffers: ${buffers}
+Other: ${otherReg}
+Discussions with Town/Officials (if any): ${townOfficials}
+
+SCOPE CUSTOMIZATION
+Include Survey? (Yes/No) ${incSurv}
+Include Master Planning? (Yes/No) ${incMast}
+Include Site Design? (Yes/No) ${incSite}
+Include Septic Design? (Yes/No) ${incSeptic}
+Include Stormwater Design? (Yes/No) ${incStorm}
+Include Permitting? (Yes/No) ${incPermit}
+
+FEES
+Phase A Fee: ${aFee}
+Phase B Fee: ${bFee}
+Phase C Fee: ${cFee}
+Phase D Fee: ${dFee}
+Retainer Amount: ${retAmount}
+
+SCHEDULE
+Estimated Start Timing: ${estStart}
+Existing Conditions Duration: ${ecDur}
+Master Plan Duration: ${masDur}
+Design Duration: ${desDur}
+
+EXCLUSIONS (CUSTOM)
+List any known exclusions
+${otherExclusions}
+
+SIGNATURE INFO
+Your Name: ${yourName}
+Your Title: ${yourTitle}
+Company Name: ${compName}
+
+`;
 
   try {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
