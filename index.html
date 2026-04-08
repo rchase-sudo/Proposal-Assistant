@@ -380,7 +380,7 @@ document.getElementById("generateButton").addEventListener("click", async () => 
   const compName = document.getElementById("compName").value;
   const notes = document.getElementById("notes").value;
 
-  if (!type.trim()) {
+  if (!projectType.trim()) {
     document.getElementById("errorMsg").style.display = "block";
     document.getElementById("errorMsg").textContent = "Please enter at least the Project Type";
     return;
